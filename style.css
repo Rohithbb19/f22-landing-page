@@ -1,0 +1,522 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Circular Std", sans-serif;
+    background-color: black;
+}
+
+button {
+    font-family: "Circular Std", sans-serif;
+    cursor: pointer;
+}
+
+.container{
+    width: 62rem;
+    margin: 0px auto;
+}
+
+.flexrow{
+    display: flex;
+}
+
+.flexcolumn{
+    display: flex;
+    flex-direction: column;
+}
+
+/* navbar */
+.navbar{
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5%;
+    padding: 10px 0px;
+}
+
+.navtext{
+    gap: 20px;
+}
+
+.navbar a{
+    cursor: pointer;
+    transition: 0.3s;
+    color: #9e9b9b;
+}
+.navtext a:hover{
+    color: #f04037;
+}
+
+.navbutton{
+    color: white;
+    background-color: #f04037;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border-color: #c31a12;
+    border-width: 1px;
+}
+
+/* coverbar */
+.cover{
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+
+}
+.covertext{
+    color: white;
+    /* padding: 25px; */
+}
+
+.covertext h1{
+    font-size: 4.5rem;
+    width: 32.5rem;
+}
+
+.covertext p{
+    font-size: 1.181rem;
+    width: 32.5rem;
+    text-align: justify;
+    line-height: 1.86rem;
+    margin-top: 15px;
+}
+
+.coverimg{
+    width: 455px;
+    height: 538px;
+    margin-right: -4rem;
+}
+
+/* vcover */
+.vcover{
+    color: white;
+    align-items: center;
+}
+
+.vcover h1{
+    text-align: center;
+    font-size: 3.375rem;
+    width: 40rem;
+    letter-spacing: -1px;
+    font-weight: bold;
+}
+
+.vcover p{
+    font-size: 1.181rem;
+    font-weight: normal;
+    font-stretch: normal;
+    color: #9e9b9b;
+}
+
+/* icon list */
+.iconl{
+    color: white;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 100px;
+}
+
+.icondata{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.icondata p{
+    text-align: center;
+    width: 16rem;
+    padding: 10px 0px;
+}
+
+.iconrow{
+    width: 100%;
+    justify-content: space-around;
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconr{
+    background-color: rgba(240, 64, 55, 0.1);
+}
+
+.icony{
+    background-color: rgba(254, 220, 90, 0.1);
+}
+
+.iconp{
+    background-color: rgba(84, 84, 212, 0.1);
+}
+
+/* pictext */
+.textinpic{
+    color: white;
+}
+
+.pictext{
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 12rem;
+    margin-bottom: 5rem;
+}
+
+.pictext .wrapper {
+    position: relative;
+}
+
+.pictext .purple-circle {
+    width: 12.188rem;
+    height: 12.188rem;
+    position: absolute;
+    background-blend-mode: multiply;
+    background-image: linear-gradient(to bottom, #2b0080,#350080);
+    opacity: 0.5;
+    border-radius: 100%;
+    z-index: 5px;
+    top: -2.5rem;
+    left: -1.5rem;
+}
+
+.pic{
+    width: 25rem;
+    height: 25rem;
+}
+
+.textinpic h4{
+    font-size: 0.8rem;
+    margin-bottom: 2rem;
+    width: 9rem;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #5454d4;
+}
+
+.textinpic h1{
+    font-size: 3.3rem;
+    margin-bottom: 2rem;
+    width: 30rem;
+}
+
+.textinpic p{
+    line-height: 1.86rem;
+    font-size: 1.181rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    width: 31rem;
+    color: #9e9b9b;
+}
+
+/* laptime */
+.laptime{
+    color: white;
+    background-color: #1e1e20;
+    padding-top: 2rem;
+}
+
+.laptime .container{
+    justify-content: center;
+    align-items: center;
+}
+
+.laptime h1{
+    font-size: 3.375rem;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.laptime p{
+    font-size: 1.181rem;
+    text-align: center;
+    width: 37rem;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+    color: #9e9b9b;
+}
+
+.laptime img:nth-child(1){
+    margin-right: -2rem;
+}
+
+.laptime img:nth-child(2){
+    margin-left: -2rem;
+}
+
+
+/* pictext2 */
+.textinpic2{
+    color: white;
+}
+
+.pictext2{
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+}
+
+.pic2{
+    width: 28rem;
+    height: 28rem;
+}
+
+.textinpic2 h4{
+    font-size: 0.8rem;
+    margin-bottom: 2rem;
+    width: 9rem;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #5454d4;
+}
+
+.textinpic2 h1{
+    font-size: 3.3rem;
+    margin-bottom: 2rem;
+    width: 35rem;
+}
+
+.textinpic2 p{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    width: 31rem;
+    line-height: 2rem;
+    margin-bottom: 3rem;
+}
+
+.textinpic2 button{
+    color: white;
+    background-color: #f04037;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border-color: #c31a12;
+    border-width: 1px;
+}
+
+/* fulltexttitle */
+.fulltexttitle{
+    color: white;
+    text-align: center;
+}
+
+.fulltexttitle h1{
+    font-size: 3.3rem;
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+}
+
+.fulltexttitle p{
+    font-size: 1.2rem;
+    margin-bottom: 4rem;
+    color: #9e9b9b;
+}
+
+.textflex {
+    gap: 1.1rem;
+}
+
+.textfull{
+    color: white;
+    padding: 1.1rem  1.1rem  1.1rem  0rem;
+    
+}
+
+.textfull h1{
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.textfull p{
+    font-size: 0.9rem;
+    width: 30rem;
+    margin-bottom: 4rem;
+    color: #9e9b9b;
+    line-height: 1.75;
+    text-align: justify;
+}
+
+.textwhite{
+    text-align: center;
+    color: white;
+    margin-bottom: 6.65rem;
+    color: #9e9b9b;
+}
+
+.textred{
+    color: #f04037;
+}
+
+.textbottom{
+    margin-bottom: 5rem;
+}
+
+/* lasttext */
+.lasttext{
+    color: white;
+    background-color: #1e1e20;
+    position: relative;
+}
+
+.lasttext .container {
+    justify-content: space-between;
+    align-items: center;
+    height: 25rem;
+}
+
+.lasttext h1{
+    font-size: 3.3rem;
+    width: 40rem;
+}
+
+
+/* footer */
+.footer{
+    justify-content: space-between;
+}
+
+.footer p {
+    color: #9e9b9b;
+    font-size: 0.9rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.38;
+}
+
+.footer .navtext {
+    margin-right: -8rem;
+}
+
+.yellow1{
+    position: absolute;
+    top: 40rem;
+}
+
+.yellow2{
+    position: absolute;
+    bottom: 0rem;
+}
+
+@media screen and (max-width: 62rem){
+    .container {
+        width:  40rem;
+    }
+    .cover {
+        flex-direction: column-reverse;
+    }
+    .vcover-img{
+        width: 40rem;
+    }
+    .iconrow{
+        flex-direction: column;
+        gap: 100px;
+    }
+    .pictext{
+        flex-direction: column;
+    }
+    .lappic img:nth-child(1){
+        height: 20rem;
+        margin: 0;
+        }
+    .lappic img:nth-child(2){
+            height: 20rem;
+            }  
+    .pictext2{
+        flex-direction: column-reverse;
+    }     
+    .textflex{
+        flex-direction: column;
+    }
+    .textflex .textfull p{
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }  
+    .textfull{
+        text-align: center;
+    }   
+    .lasttext .container{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    .footer{
+        flex-direction: column;   
+    }
+    .footer .navtext{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .container{
+        width: 32em;
+    }
+    .cover .coverimg{
+        width: 21rem;
+        height: 25rem;
+    }
+    .cover .covertext h1{
+        font-size: 2.25rem;
+        text-align: center;
+    }
+    .cover .covertext p{
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    .vcover h1{
+        font-size: 2rem;
+    }
+    .vcover p{
+        font-size: 0.8rem;
+    }
+    .vcover .vcover-img{
+        width: 30rem;
+    }
+    .pictext .pic{
+        width: 20rem;
+        height: 20rem;
+    }
+    .pictext .textinpic{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .pictext .textinpic p,  .pictext .textinpic h1{
+        text-align: center;
+    }
+    .pictext .textinpic h4{
+        margin: 1rem auto;
+    }
+    .laptime .lappic{
+        flex-direction: column;
+    }
+    .laptime p{
+        width: 100%;
+    }
+    .lappic img:nth-child(1){
+        width: 20rem;
+    } 
+    .pictext2 .pic2{
+        width: 20rem;
+        height: 20rem;
+    } 
+    .pictext2 .textinpic2{
+        text-align: center;
+    }  
+    .pictext2 .textinpic2 h1{
+        width: 100%;
+    }
+}
