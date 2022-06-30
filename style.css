@@ -17,6 +17,7 @@ button {
 .container{
     width: 62rem;
     margin: 0px auto;
+    overflow-x: hidden;
 }
 
 .flexrow{
@@ -132,6 +133,7 @@ button {
     text-align: center;
     width: 16rem;
     padding: 10px 0px;
+    color: #9e9b9b;
 }
 
 .iconrow{
@@ -401,11 +403,13 @@ button {
 .yellow1{
     position: absolute;
     top: 40rem;
+    z-index: -1;
 }
 
 .yellow2{
     position: absolute;
     bottom: 0rem;
+    z-index: 0;
 }
 
 @media screen and (max-width: 62rem){
@@ -462,28 +466,43 @@ button {
 
 @media screen and (max-width: 600px){
     .container{
-        width: 32em;
+        width: 100%;
+        padding: 0 1rem;
+    }
+    .navbar .navtext {
+        gap: 10px;
+    }
+    .navbar .navbutton {
+        padding: 4px;
     }
     .cover .coverimg{
         width: 21rem;
         height: 25rem;
+        margin-right: 0;
     }
     .cover .covertext h1{
-        font-size: 2.25rem;
+        font-size: 2rem;
         text-align: center;
+        width: inherit;
     }
     .cover .covertext p{
         font-size: 0.8rem;
         text-align: center;
+        width: inherit;
     }
     .vcover h1{
         font-size: 2rem;
+        width: inherit;
     }
     .vcover p{
         font-size: 0.8rem;
+        width: inherit;
     }
     .vcover .vcover-img{
-        width: 30rem;
+        width: 24rem;
+    }
+    .pictext {
+        margin-top: 6rem;
     }
     .pictext .pic{
         width: 20rem;
@@ -497,17 +516,31 @@ button {
     .pictext .textinpic p,  .pictext .textinpic h1{
         text-align: center;
     }
+    .pictext .textinpic h1{
+        font-size: 2rem;
+        width: inherit;
+    }
+    .pictext .textinpic p{
+        font-size: 0.8rem;
+        width: inherit;
+    }
     .pictext .textinpic h4{
         margin: 1rem auto;
     }
     .laptime .lappic{
         flex-direction: column;
+        align-items: center;
     }
     .laptime p{
         width: 100%;
     }
     .lappic img:nth-child(1){
         width: 20rem;
+        margin-left: 0px;
+    } 
+    .lappic img:nth-child(2){
+        width: 26rem;
+        margin-left: 0px;
     } 
     .pictext2 .pic2{
         width: 20rem;
@@ -517,6 +550,37 @@ button {
         text-align: center;
     }  
     .pictext2 .textinpic2 h1{
-        width: 100%;
+        font-size: 2rem;
+        width: inherit;
+    }
+    .pictext2 .textinpic2 p{
+        font-size: 0.8rem;
+        width: inherit;
+    }
+    .laptime h1{
+        font-size: 2rem;
+    }
+    .laptime p{
+        font-size: 0.8rem;
+    }
+    .fulltexttitle h1 {
+        font-size: 2rem;
+        width: inherit;
+    }
+    .fulltexttitle p {
+        font-size: 0.6rem;
+        width: inherit;
+    }
+    .lasttext h1 {
+        font-size: 2rem;
+        width: inherit;
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 380px){
+    /* navbutton is hidden for extra small screen */
+    .navbar div:nth-child(3){
+        display: none;
     }
 }
