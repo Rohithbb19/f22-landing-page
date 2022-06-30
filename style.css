@@ -367,6 +367,7 @@ button {
     color: white;
     background-color: #1e1e20;
     position: relative;
+    padding: 2rem 0;
 }
 
 .lasttext .container {
@@ -378,6 +379,10 @@ button {
 .lasttext h1{
     font-size: 3.3rem;
     width: 40rem;
+}
+
+.lasttext button{
+    z-index: 1;
 }
 
 
@@ -409,6 +414,15 @@ button {
     position: absolute;
     bottom: 0rem;
     z-index: 0;
+}
+
+.purple-arc{
+    position: absolute;
+    bottom: 0rem;
+    right: 0rem;
+    z-index: 0;
+    padding-bottom: 10px;
+    height: 100%;
 }
 
 @media screen and (max-width: 62rem){
@@ -574,6 +588,10 @@ button {
         font-size: 2rem;
         width: inherit;
         margin-bottom: 0.5rem;
+    }
+    
+    .purple-arc{
+        display: none;
     }
 }
 
