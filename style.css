@@ -17,7 +17,6 @@ button {
 .container{
     width: 62rem;
     margin: 0px auto;
-    overflow-x: hidden;
 }
 
 .flexrow{
